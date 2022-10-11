@@ -1,6 +1,6 @@
 {
   "name": "lsaac-stat",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,18 +11,15 @@
     "url": "git+https://github.com/LsaaIee/Lsaac-stat.git"
   },
   "bin": {
-    "stat": "./main.js"
+    "lsaac-stat": "./main.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/LsaaIee/Lsaac-stat/issues"
   },
   "homepage": "https://github.com/LsaaIee/Lsaac-stat#readme",
   "devDependencies": {
     "jest": "^29.1.2"
-  },
-  "dependencies": {
-    "lsaac-stat": "^1.0.0"
   }
 }
