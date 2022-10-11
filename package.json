@@ -21,5 +21,8 @@
   "homepage": "https://github.com/LsaaIee/Lsaac-stat#readme",
   "devDependencies": {
     "jest": "^29.1.2"
+  },
+  "dependencies": {
+    "lsaac-stat": "^1.0.0"
   }
 }
