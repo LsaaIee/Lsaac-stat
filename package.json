@@ -4,16 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LsaaIee/Lsaac-stat.git"
+  },
+  "bin": {
+    "stat": "./main.js"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LsaaIee/Lsaac-stat/issues"
   },
-  "homepage": "https://github.com/LsaaIee/Lsaac-stat#readme"
+  "homepage": "https://github.com/LsaaIee/Lsaac-stat#readme",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
 }
