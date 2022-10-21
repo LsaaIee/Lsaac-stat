@@ -28,6 +28,25 @@ switch (command){
     case "max":
         result = lib.max(numbers);
         break;
+    case "med":
+        result = lib.med(numbers);
+        break;
+    case "iqr":
+        result = lib.iqr(numbers);
+        break;
+    case "outlier":
+        outArrFiltered = lib.outlier(numbers);
+        if (outArrFiltered === undefined){
+            return "";
+        }
+        else {
+            var len2 = outArrFiltered.length;
+            for (let n = 0; n < len2; n++){
+                console.log(outArrFiltered[n]);
+            }
+            return "";
+        }
+        break;
     default:
         console.log("Wrong command!");
         process.exit(1);
