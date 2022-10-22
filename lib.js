@@ -33,7 +33,7 @@ function iqr(numbers){
     var arr1Med;
     var arr2Med;
     /* Get Q1 and Q3 from the array */
-    if (result%2 === 0){
+    if (len%2 === 0){
         for (let i = 0; i < result; i++){
             arr1[i] = numbers[i];
         }
@@ -80,7 +80,7 @@ function outlier(numbers){
     var arr1Med;
     var arr2Med;
     /* Get Q1 and Q3 from the array */
-    if (result%2 == 0){
+    if (len%2 == 0){
         for (let i = 0; i < result; i++){
             arr1[i] = numbers[i];
             arr1Med = med(arr1);
