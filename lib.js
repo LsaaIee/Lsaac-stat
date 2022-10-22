@@ -29,7 +29,7 @@ function iqr(numbers){
     let arr1 = [];
     let arr2 = [];
     var len = numbers.length;
-    var result = len/2;
+    var result = Math.floor(len/2);
     var arr1Med;
     var arr2Med;
     /* Get Q1 and Q3 from the array */
@@ -51,7 +51,7 @@ function iqr(numbers){
             arr1[k] = numbers[k];
         }
         arr1Med = med(arr1);
-        for (let l = result; l < len; l++){
+        for (let l = result+1; l < len; l++){
             arr2[l] = numbers[l];
             var arr2Filtered = arr2.filter(function(el){
                 return el != null;
@@ -76,7 +76,7 @@ function outlier(numbers){
     let arr1 = [];
     let arr2 = [];
     var len = numbers.length;
-    var result = len/2;
+    var result = Math.floor(len/2);
     var arr1Med;
     var arr2Med;
     /* Get Q1 and Q3 from the array */
@@ -95,11 +95,11 @@ function outlier(numbers){
         }
     }
     else {
-        for (let k = 0; k < result-0.5; k++){
+        for (let k = 0; k < result; k++){
             arr1[k] = numbers[k];
             arr1Med = med(arr1);
         }
-        for (let l = result+0.5; l < len; l++){
+        for (let l = result; l < len; l++){
             arr2[l] = numbers[l];
             var arr2Filtered = arr2.filter(function(el){
                 return el != null;
