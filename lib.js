@@ -99,7 +99,7 @@ function outlier(numbers){
             arr1[k] = numbers[k];
             arr1Med = med(arr1);
         }
-        for (let l = result; l < len; l++){
+        for (let l = result+1; l < len; l++){
             arr2[l] = numbers[l];
             var arr2Filtered = arr2.filter(function(el){
                 return el != null;
